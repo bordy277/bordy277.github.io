@@ -19,6 +19,9 @@ h1 {
 h2 {
   color: $c-grey4;
   font-size: $fs-5;
+  @media only screen and (max-width: $w-tab) {
+    font-size: $fs-3;
+  }
 }
 
 h3 {
