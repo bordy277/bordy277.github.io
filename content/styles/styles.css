@@ -330,6 +330,11 @@ ul {
 .module--hs .list__item {
   padding-right: 20px;
 }
+@media only screen and (max-width: 525px) {
+  .module--hs {
+    text-align: center;
+  }
+}
 
 .el--plaque {
   border-radius: 2px;

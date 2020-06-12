@@ -28,4 +28,8 @@
   .list__item {
     padding-right: $space2;
   }
+
+  @media only screen and (max-width: 525px) {
+    text-align: center;
+  }
 }
