@@ -1,0 +1,30 @@
+// Manager //
+.el--manager {
+  text-align: center;
+  padding: 0 $space2;
+  margin-bottom: $space6;
+
+  .portrait {
+    overflow: hidden;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto $space1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+  }
+
+  .name {
+    color: $c-white;
+    margin-bottom: $space1;
+  }
+
+  .description {
+    margin-top: $space1;
+    font-size: $fs-2;
+    color: $c-grey2;
+    font-weight: $fw-3;
+  }
+}

@@ -1,0 +1,41 @@
+// Common styles //
+
+// images
+.img {
+  width: 100%;
+  vertical-align: top;
+}
+
+// icons
+.icon--poopstack {
+  width: 10vw;
+}
+
+// flex
+.flex {
+  display: flex;
+}
+.flex-ac {
+  align-items: center;
+  justify-content: center;
+}
+.auto {
+  flex: auto;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// margins
+.no-m {
+  margin-bottom: 0;
+}
+
+// statement
+.statement {
+  font-weight: $fw-3;
+  font-size: $fs-2;
+  letter-spacing: 5px;
+  color: $c-grey3;
+  text-transform: uppercase;
+}
