@@ -135,10 +135,6 @@ ul {
   vertical-align: top;
 }
 
-.icon--poopstack {
-  width: 10vw;
-}
-
 .flex {
   display: flex;
 }
@@ -397,6 +393,10 @@ ul {
 }
 .module--poopstack .el {
   padding: 0 40px;
+}
+.module--poopstack .icon--poopstack {
+  width: 10vw;
+  max-width: 200px;
 }
 @media only screen and (max-width: 1024px) {
   .module--poopstack {
