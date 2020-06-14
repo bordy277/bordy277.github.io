@@ -262,6 +262,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/content/scripts/scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/content/scripts/scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/content/styles/base/_regions.scss": {
 		"aP": 0,
 		"bl": 0,

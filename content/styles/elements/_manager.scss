@@ -28,3 +28,26 @@
     font-weight: $fw-3;
   }
 }
+
+@media only screen and (max-width: $w-tab) {
+  .el--manager {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: $space3;
+
+    &:first-of-type {
+      margin-top: $space4;
+    }
+
+    .portrait {
+      height: 100px;
+      width: 100px;
+      margin: 0 $space2;
+    }
+
+    .info {
+      text-align: left;
+    }
+  }
+}

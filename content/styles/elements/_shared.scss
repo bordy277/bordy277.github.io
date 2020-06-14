@@ -42,6 +42,10 @@
   justify-content: flex-end;
   @media only screen and (max-width: $w-tab) {
     justify-content: center;
+
+    .social__link:first-of-type {
+      margin-left: 0;
+    }
   }
 }
 .copyright {

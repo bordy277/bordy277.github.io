@@ -224,7 +224,7 @@ ul {
   .metallic .header--banner {
     background: none;
     color: #fcf6ba;
-    -webkit-text-fill-color: #bf953f;
+    -webkit-text-fill-color: #d5ad5b;
   }
 }
 .shimmer .header--banner {
@@ -346,6 +346,12 @@ ul {
   .module--hs {
     text-align: center;
   }
+  .module--hs .list__item {
+    padding-right: 0;
+  }
+  .module--hs .list__item:first-of-type p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .el--plaque {
@@ -359,13 +365,22 @@ ul {
   text-align: center;
   color: #444756;
 }
-.el--plaque.champion {
+.club--champion .el--plaque {
   color: #524932;
   background: url("../images/gold.jpg");
 }
-.el--plaque.champion .name {
+.club--champion .el--plaque .name {
   font-size: 24px;
   font-weight: 600;
+}
+.club--past .el--plaque {
+  width: 100%;
+  max-width: calc(33% - 50px);
+}
+@media only screen and (max-width: 1024px) {
+  .club--past .el--plaque {
+    max-width: 100%;
+  }
 }
 .el--plaque .year {
   font-weight: 700;
@@ -398,6 +413,13 @@ ul {
   top: auto;
   right: -10px;
   bottom: -10px;
+}
+
+.club--past {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .module--poopstack .team {
@@ -452,6 +474,25 @@ ul {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 1024px) {
+  .el--manager {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .el--manager:first-of-type {
+    margin-top: 40px;
+  }
+  .el--manager .portrait {
+    height: 100px;
+    width: 100px;
+    margin: 0 20px;
+  }
+  .el--manager .info {
+    text-align: left;
+  }
+}
 .el--divider {
   height: 1px;
   background-color: #cccccc;
@@ -497,6 +538,9 @@ ul {
 @media only screen and (max-width: 1024px) {
   .el--social-links {
     justify-content: center;
+  }
+  .el--social-links .social__link:first-of-type {
+    margin-left: 0;
   }
 }
 

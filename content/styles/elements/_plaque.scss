@@ -10,13 +10,22 @@
   text-align: center;
   color: #444756;
 
-  &.champion {
+  .club--champion & {
     color: $c-plaque;
     background: url('../images/gold.jpg');
 
     .name {
       font-size: $fs-3;
       font-weight: $fw-6;
+    }
+  }
+
+  .club--past & {
+    width: 100%;
+    max-width: calc(33% - 50px);
+
+    @media only screen and (max-width: $w-tab) {
+      max-width: 100%;
     }
   }
 
@@ -55,4 +64,11 @@
     right: -$space1;
     bottom: -$space1;
   }
+}
+
+.club--past {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
