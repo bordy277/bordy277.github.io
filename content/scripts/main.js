@@ -29,7 +29,6 @@ requirejs([
 
     // players
     var players = [];
-
     for (var i = 0; i < boxscoreForWeek.length; i++) {
       var box = boxscoreForWeek[i];
       players.push(box.homeRoster);
@@ -38,6 +37,7 @@ requirejs([
 
     var allPlayers = [].concat.apply([], players);
     var highestPlayer = allPlayers[0];
+    var mvp = $('.stat--mvp');
     for (var i = 0; i < allPlayers.length; i++) {
       var player = allPlayers[i];
       if (player.position != "Bench") {
@@ -47,54 +47,49 @@ requirejs([
       }
     }
     if (highestPlayer.totalPoints != 0) {
-      $('.stat--mvp .name').text(highestPlayer.player.fullName);
-      $('.stat--mvp .owner').text(highestPlayer.player.proTeam);
-      $('.stat--mvp .wins').text(highestPlayer.player.defaultPosition);
-      $('.stat--mvp .score').text(Number(highestPlayer.totalPoints.toFixed(1)));
+      mvp.find('.name').text(highestPlayer.player.fullName);
+      mvp.find('.owner').text(highestPlayer.player.proTeam);
+      mvp.find('.wins').text(highestPlayer.player.defaultPosition);
+      mvp.find('.score').text(Number(highestPlayer.totalPoints.toFixed(1)));
     }
-    console.log(highestPlayer);
 
     // stats
     var lowestTeamScore = Number.POSITIVE_INFINITY;
     var highestTeamScore = Number.NEGATIVE_INFINITY;
     var teamScore;
-    var lowestTeamName;
-    var highestTeamName;
-    var lowestTeamOwner;
-    var highestTeamOwner;
-    var lowestTeamPercent;
-    var highestTeamPercent;
+    var highestTeam = [];
+    var lowestTeam = [];
+    var statHigh = $('.stat--high');
+    var statLow = $('.stat--low');
+
     for (var i = 0; i < teams.length; i++) {
       var team = teams[i];
       teamScore = team.totalPointsScored;
       if (teamScore < lowestTeamScore) {
         lowestTeamScore = Number(teamScore.toFixed(1));
-        lowestTeamName = team.name;
-        lowestTeamOwner = team.abbreviation;
-        lowestTeamPercent = team.winningPercentage;
+        lowestTeam = {name: team.name, owner: team.abbreviation, percent: team.winningPercentage, score: lowestTeamScore};
       }
       if (teamScore > highestTeamScore) {
         highestTeamScore = Number(teamScore.toFixed(1));
-        highestTeamName = team.name;
-        highestTeamOwner = team.abbreviation;
-        highestTeamPercent = team.winningPercentage;
+        highestTeam = {name: team.name, owner: team.abbreviation, percent: team.winningPercentage, score: highestTeamScore};
       }
     }
-    $('.stat--high .name').text(highestTeamName);
-    $('.stat--high .score').text(highestTeamScore);
-    $('.stat--high .owner').text(highestTeamOwner);
-    $('.stat--high .percent').text(highestTeamPercent);
-    $('.stat--low .name').text(lowestTeamName);
-    $('.stat--low .score').text(lowestTeamScore);
-    $('.stat--low .owner').text(lowestTeamOwner);
-    $('.stat--low .percent').text(lowestTeamPercent);
+
+    statHigh.find('.name').text(highestTeam.name)
+    statHigh.find('.score').text(highestTeam.score)
+    statHigh.find('.owner').text(highestTeam.owner)
+    statHigh.find('.percent').text(highestTeam.percent);
+
+    statLow.find('.name').text(lowestTeam.name);
+    statLow.find('.score').text(lowestTeam.score);
+    statLow.find('.owner').text(lowestTeam.owner);
+    statLow.find('.percent').text(lowestTeam.percent);
 
     // score header
     $('#season').text(year);
     $('#week').text(week);
 
     // boxscores
-    // console.log(boxscoreForWeek);
     for (var i = 0; i < boxscoreForWeek.length; i++) {
       var box = boxscoreForWeek[i];
       var home;
