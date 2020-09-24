@@ -25,6 +25,28 @@
 		"oAP": "/CNAME",
 		"oF": 0
 		},
+	"/content/images/ad_leaderboard.jpg": {
+		"ft": 16384,
+		"iS": 41634,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/content/images/ad_leaderboard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/content/images/ad_leaderboard_mobile.jpg": {
+		"ft": 16384,
+		"iS": 28500,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/content/images/ad_leaderboard_mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/content/images/banner.jpg": {
 		"ft": 16384,
 		"iS": 352835,

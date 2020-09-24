@@ -24,6 +24,15 @@ html, body {
 .region.no-pad {
   padding: 0;
 }
+.leaderboard .region {
+  padding: 40px 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .leaderboard + .section .region {
+    padding-top: 40px;
+  }
+}
 
 .block {
   display: flex;
@@ -167,6 +176,30 @@ ul {
   letter-spacing: 5px;
   color: #777777;
   text-transform: uppercase;
+}
+
+.el--ad {
+  margin: auto;
+  max-width: 728px;
+  display: block;
+  border: solid 1px #e2e8ee;
+}
+.el--ad .img {
+  width: 100%;
+}
+.el--ad .mobile {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .el--ad {
+    max-width: 300px;
+  }
+  .el--ad .desktop {
+    display: none;
+  }
+  .el--ad .mobile {
+    display: block;
+  }
 }
 
 .region--banner {

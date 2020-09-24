@@ -15,6 +15,17 @@ html, body {
   &.no-pad {
     padding: 0;
   }
+
+  .leaderboard & {
+    padding: $space4 0 0;
+  }
+}
+.leaderboard + .section {
+  .region {
+    @media only screen and (max-width: $w-tab) {
+      padding-top: $space4;
+    }
+  }
 }
 .block {
   display: flex;
