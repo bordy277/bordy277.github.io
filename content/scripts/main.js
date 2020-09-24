@@ -109,7 +109,7 @@ requirejs([
                                   '<div class="logo"><img class="img" src="'+home.logoURL+'"/></div>'+
                                     '<div class="info">'+
                                       '<div class="name">'+home.name+'</div>'+
-                                      '<div class="record"><span class="seed">'+home.playoffSeed+'</span> ('+home.wins+'-'+home.losses+', '+home.homeWins+'-'+home.homeLosses+' home)</div>'+
+                                      '<div class="record">('+home.wins+'-'+home.losses+', '+home.homeWins+'-'+home.homeLosses+' home) <span class="seed">'+home.playoffSeed+' </span></div>'+
                                     '</div>'+
                                     '<div class="score">'+box.homeScore+'</div>'+
                                   '</div>' +
@@ -117,7 +117,7 @@ requirejs([
                                     '<div class="logo"><img class="img" src="'+away.logoURL+'"/></div>'+
                                     '<div class="info">'+
                                       '<div class="name">'+away.name+'</div>'+
-                                      '<div class="record"><span class="seed">'+away.playoffSeed+'</span> ('+away.wins+'-'+away.losses+', '+away.awayWins+'-'+away.homeLosses+' away)</div>'+
+                                      '<div class="record">('+away.wins+'-'+away.losses+', '+away.awayWins+'-'+away.homeLosses+' away) <span class="seed">'+away.playoffSeed+' </span></div>'+
                                     '</div>'+
                                     '<div class="score">'+box.awayScore+'</div>'+
                                   '</div>' +
