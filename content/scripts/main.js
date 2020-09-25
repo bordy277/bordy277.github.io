@@ -1,3 +1,4 @@
+function getData(){
 requirejs.config({
   paths: {
     jquery: 'jquery.min',
@@ -46,6 +47,7 @@ requirejs([
         }
       }
     }
+
     if (highestPlayer.totalPoints != 0) {
       mvp.find('.name').text(highestPlayer.player.fullName);
       mvp.find('.owner').text(highestPlayer.player.proTeam);
@@ -75,9 +77,9 @@ requirejs([
       }
     }
 
-    statHigh.find('.name').text(highestTeam.name)
-    statHigh.find('.score').text(highestTeam.score)
-    statHigh.find('.owner').text(highestTeam.owner)
+    statHigh.find('.name').text(highestTeam.name);
+    statHigh.find('.score').text(highestTeam.score);
+    statHigh.find('.owner').text(highestTeam.owner);
     statHigh.find('.percent').text(highestTeam.percent);
 
     statLow.find('.name').text(lowestTeam.name);
@@ -89,38 +91,46 @@ requirejs([
     $('#season').text(year);
     $('#week').text(week);
 
+    var elBoxscore = $('.boxscore');
+
     // boxscores
     for (var i = 0; i < boxscoreForWeek.length; i++) {
       var box = boxscoreForWeek[i];
       var home;
       var away;
       var leader;
+
       box.homeTeamId === 12 || box.homeTeamId === 13 ? home = teams[box.homeTeamId - 2] : home = teams[box.homeTeamId - 1];
       box.awayTeamId === 12 || box.awayTeamId === 13 ? away = teams[box.awayTeamId - 2] : away = teams[box.awayTeamId - 1];
       box.homeScore > box.awayScore ? leader = 'leader--home' : '';
       box.awayScore > box.homeScore ? leader = 'leader--away' : '';
-      $('.el--boxscores').append('<div class="boxscore '+leader+'">'+
-                                  '<div class="team home">'+
-                                  '<div class="logo"><img class="img" src="'+home.logoURL+'"/></div>'+
-                                    '<div class="info">'+
-                                      '<div class="name">'+home.name+'</div>'+
-                                      '<div class="record">('+home.wins+'-'+home.losses+', '+home.homeWins+'-'+home.homeLosses+' home) <span class="seed">'+home.playoffSeed+' </span></div>'+
-                                    '</div>'+
-                                    '<div class="score">'+box.homeScore+'</div>'+
-                                  '</div>' +
-                                  '<div class="team away">'+
-                                    '<div class="logo"><img class="img" src="'+away.logoURL+'"/></div>'+
-                                    '<div class="info">'+
-                                      '<div class="name">'+away.name+'</div>'+
-                                      '<div class="record">('+away.wins+'-'+away.losses+', '+away.awayWins+'-'+away.homeLosses+' away) <span class="seed">'+away.playoffSeed+' </span></div>'+
-                                    '</div>'+
-                                    '<div class="score">'+box.awayScore+'</div>'+
-                                  '</div>' +
-                                '</div>'
-                              );
+
+      var homeArr = {name: home.name, score: box.homeScore, logo: home.logoURL, wins: home.wins, losses: home.losses, hw: home.homeWins, hl: home.homeLosses, seed: home.playoffSeed};
+      var awayArr = {name: away.name, score: box.awayScore, logo: away.logoURL, wins: away.wins, losses: away.losses, aw: away.awayWins, al: away.awayLosses, seed: away.playoffSeed};
+
+      var elBox = elBoxscore[i];
+      var elHome = $(elBox).find('.home');
+      var elAway = $(elBox).find('.away');
+
+      elBox.classList.add(leader);
+
+      elHome.find('.logo .img').attr('src', homeArr.logo);
+      elHome.find('.name').text(homeArr.name);
+      elHome.find('.record').text('('+homeArr.wins+'-'+homeArr.losses+', '+homeArr.hw+'-'+homeArr.hl+' home) '+homeArr.seed);
+      elHome.find('.score').text(homeArr.score);
+
+      elAway.find('.logo .img').attr('src', awayArr.logo);
+      elAway.find('.name').text(awayArr.name);
+      elAway.find('.record').text('('+awayArr.wins+'-'+awayArr.losses+', '+awayArr.aw+'-'+awayArr.al+' away) '+awayArr.seed);
+      elAway.find('.score').text(awayArr.score);
     }
   }
 
   init();
 
 });
+
+setTimeout(getData, 10000);
+}
+
+getData();

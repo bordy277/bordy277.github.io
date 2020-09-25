@@ -8,6 +8,9 @@
 }
 
 .team {
+  min-height: 97px;
+  box-sizing: border-box;
+  
   .stat--high & {
     background-color: $c-green;
   }

@@ -611,6 +611,7 @@ ul {
 }
 
 .boxscore {
+  min-height: 154px;
   width: 100%;
   max-width: calc(33.333333% - 10px);
   box-sizing: border-box;
@@ -645,6 +646,7 @@ ul {
 }
 .boxscore .team {
   flex: 1 0;
+  min-height: 51px;
   display: flex;
   position: relative;
 }
@@ -707,6 +709,10 @@ ul {
   padding: 20px;
 }
 
+.team {
+  min-height: 97px;
+  box-sizing: border-box;
+}
 .stat--high .team {
   background-color: #283b18;
 }
