@@ -18,7 +18,7 @@ requirejs([
       var d = new Date(+date);
       d.setHours(0,0,0);
       d.setDate(d.getDate()+4-(d.getDay()||7));
-      return Math.ceil((((d-new Date(d.getFullYear(),0,1))/8.64e7)+7)/7);
+      return Math.ceil((((d-new Date(d.getFullYear(),0,1))/8.64e7)+6)/7);
     };
     var d = new Date();
     var year = d.getFullYear();
@@ -27,7 +27,7 @@ requirejs([
     var matchups = league.scheduleSettings.numberOfRegularSeasonMatchups;
     const teams = await client.getTeamsAtWeek({seasonId: year, scoringPeriodId: week});
     const boxscoreForWeek = await client.getBoxscoreForWeek({ seasonId: year, matchupPeriodId: week, scoringPeriodId: week});
-
+    console.log(week);
     // players
     var players = [];
     for (var i = 0; i < boxscoreForWeek.length; i++) {
@@ -35,7 +35,6 @@ requirejs([
       players.push(box.homeRoster);
       players.push(box.awayRoster);
     }
-
     var allPlayers = [].concat.apply([], players);
     var highestPlayer = allPlayers[0];
     var mvp = $('.stat--mvp');
@@ -47,7 +46,6 @@ requirejs([
         }
       }
     }
-
     if (highestPlayer.totalPoints != 0) {
       mvp.find('.name').text(highestPlayer.player.fullName);
       mvp.find('.owner').text(highestPlayer.player.proTeam);
