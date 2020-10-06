@@ -193,7 +193,7 @@
 		"oAP": "/content/images/managers/musser.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/content/images/managers/nick.jpg": {
@@ -204,7 +204,7 @@
 		"oAP": "/content/images/managers/nick.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/content/images/managers/pat.jpg": {
