@@ -142,7 +142,7 @@ requirejs([
 
 });
 
-setTimeout(getData, 10000);
+setTimeout(getData, 30000);
 }
 
 getData();

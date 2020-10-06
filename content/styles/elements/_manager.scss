@@ -17,20 +17,28 @@
   }
 
   .name {
+    font-size: $fs-3;
     color: $c-white;
-    margin-bottom: $space1;
+    margin-bottom: $space05;
+    margin-top: $space2;
   }
 
   .description {
     margin-bottom: $space1;
-    font-size: $fs-0;
-    color: $c-grey4;
+    font-size: $fs-00;
+    color: #794210;
     text-transform: uppercase;
     font-weight: $fw-5;
     display: inline-block;
     border-radius: $radius;
     padding: 2px $space1 1px;
-    background-color: $c-grey1;
+    margin-top: $space1;
+
+    &.dark {
+      color: #4c2b0d;
+    }
+
+    background-image: linear-gradient(to bottom right, rgba(255,255,255,.7), rgba(255,255,255,.3));
   }
 
   .team {
@@ -47,7 +55,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: $space3;
+    margin-bottom: $space2;
+    padding-top: $space2;
+    border-top: solid 1px rgba(255,255,255,.2);
 
     &:first-of-type {
       margin-top: $space4;
@@ -57,6 +67,10 @@
       height: 100px;
       width: 100px;
       margin: 0 $space2;
+    }
+
+    .name {
+      margin-top: 0;
     }
 
     .info {
