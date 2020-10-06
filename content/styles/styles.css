@@ -508,7 +508,7 @@ ul {
   font-weight: 500;
   display: inline-block;
   border-radius: 2px;
-  padding: 2px 10px;
+  padding: 2px 10px 1px;
   background-color: #eeeeee;
 }
 .el--manager .team {
