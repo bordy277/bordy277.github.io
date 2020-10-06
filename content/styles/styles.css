@@ -501,9 +501,21 @@ ul {
   margin-bottom: 10px;
 }
 .el--manager .description {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #cccccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444444;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 10px;
+  background-color: #eeeeee;
+}
+.el--manager .team {
+  min-height: 0;
+  font-style: italic;
+  color: #eeeeee;
+  font-size: 16px;
   font-weight: 300;
 }
 

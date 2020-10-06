@@ -22,9 +22,22 @@
   }
 
   .description {
-    margin-top: $space1;
-    font-size: $fs-2;
-    color: $c-grey2;
+    margin-bottom: $space1;
+    font-size: $fs-0;
+    color: $c-grey4;
+    text-transform: uppercase;
+    font-weight: $fw-5;
+    display: inline-block;
+    border-radius: $radius;
+    padding: 2px $space1;
+    background-color: $c-grey1;
+  }
+
+  .team {
+    min-height: 0;
+    font-style: italic;
+    color: $c-grey1;
+    font-size: $fs-1;
     font-weight: $fw-3;
   }
 }

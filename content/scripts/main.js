@@ -1,3 +1,6 @@
+var date = new Date();
+var day = date.getDay();
+console.log(day);
 function getData(){
 requirejs.config({
   paths: {
@@ -27,7 +30,6 @@ requirejs([
     var matchups = league.scheduleSettings.numberOfRegularSeasonMatchups;
     const teams = await client.getTeamsAtWeek({seasonId: year, scoringPeriodId: week});
     const boxscoreForWeek = await client.getBoxscoreForWeek({ seasonId: year, matchupPeriodId: week, scoringPeriodId: week});
-    console.log(week);
     // players
     var players = [];
     for (var i = 0; i < boxscoreForWeek.length; i++) {
@@ -61,6 +63,7 @@ requirejs([
     var lowestTeam = [];
     var statHigh = $('.stat--high');
     var statLow = $('.stat--low');
+    var managerTeam = $('.el--manager').find('.team');
 
     for (var i = 0; i < teams.length; i++) {
       var team = teams[i];
@@ -84,6 +87,17 @@ requirejs([
     statLow.find('.score').text(lowestTeam.score);
     statLow.find('.owner').text(lowestTeam.owner);
     statLow.find('.percent').text(lowestTeam.percent);
+
+    // manager team
+    for (var i = 0; i < managerTeam.length; i++) {
+      for (var a = 0; a < teams.length; a++) {
+        var manNum = parseInt(managerTeam[i].attributes.value.value);
+        var id = teams[a].id;
+        if (manNum === id) {
+          $(managerTeam[i]).text(teams[a].name);
+        }
+      }
+    }
 
     // score header
     $('#season').text(year);

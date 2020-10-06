@@ -163,6 +163,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/content/images/managers/kevin.jpg": {
+		"ft": 16384,
+		"iS": 39288,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/content/images/managers/kevin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/content/images/managers/mark.jpg": {
 		"ft": 16384,
 		"iS": 36468,
