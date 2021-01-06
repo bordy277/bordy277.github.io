@@ -17,7 +17,11 @@ html, body {
   }
 
   .leaderboard & {
-    padding: $space4 0 0;
+    padding: $space4 0;
+
+    .inseason & {
+      padding: $space4 0 0;
+    }
   }
 }
 .leaderboard + .section {

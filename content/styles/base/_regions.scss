@@ -104,3 +104,19 @@
   color: $c-white;
   background-color: $c-black;
 }
+
+// scores
+.scores {
+  display: none;
+
+  .onseason & {
+    display: block;
+  }
+}
+
+// mobile banner
+@media only screen and (max-width: $w-tab) {
+  .banner {
+    display: none;
+  }
+}

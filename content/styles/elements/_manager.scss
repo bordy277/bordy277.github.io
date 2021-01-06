@@ -59,18 +59,21 @@
     padding-top: $space2;
     border-top: solid 1px rgba(255,255,255,.2);
 
-    &:first-of-type {
-      margin-top: $space4;
+    &:last-of-type {
+      border-bottom: solid 1px rgba(255,255,255,.2);
+      margin-bottom: 0;
+      padding-bottom: $space2;
     }
 
     .portrait {
-      height: 100px;
-      width: 100px;
+      height: 80px;
+      width: 80px;
       margin: 0 $space2;
     }
 
     .name {
       margin-top: 0;
+      font-size: $fs-2;
     }
 
     .info {

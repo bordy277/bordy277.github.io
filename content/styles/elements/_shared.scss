@@ -10,6 +10,10 @@
 
   @media only screen and (max-width: $w-tab) {
     padding: $space2;
+
+    &.module--hs {
+      padding: $space6;
+    }
   }
 
   .el {
@@ -73,5 +77,27 @@
 
   &.espn {
     background-image: url('../images/icons/icon--espn.svg');
+  }
+}
+
+// mobile masthead
+.region--masthead {
+  background-color: $c-green;
+  padding: $space2 0;
+  display: none;
+
+  @media only screen and (max-width: $w-tab) {
+    display: block;
+  }
+
+  .el,
+  .header {
+    margin: 0;
+  }
+
+  .header {
+    color: $c-white;
+    font-size: $fs-2;
+    text-transform: uppercase;
   }
 }
