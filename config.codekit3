@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/champions.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -23,6 +31,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/champions.html",
+		"oF": 0
+		},
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/CNAME",
 		"oF": 0
 		},
 	"/content/images/ad_leaderboard.jpg": {
@@ -985,6 +1001,22 @@
 		"oAP": "/views/global/masthead.html",
 		"oF": 0
 		},
+	"/views/sections/accordion-cup.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/views/sections/accordion-cup.html",
+		"oF": 0
+		},
+	"/views/sections/accordion-seasons.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/views/sections/accordion-seasons.html",
+		"oF": 0
+		},
 	"/views/sections/carousel.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1063,14 +1095,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/views/sections/poopstack-list.html",
-		"oF": 0
-		},
-	"/views/sections/seasons.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/views/sections/seasons.html",
 		"oF": 0
 		},
 	"/views/sections/social.kit": {
