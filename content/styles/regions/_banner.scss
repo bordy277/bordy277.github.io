@@ -1,0 +1,160 @@
+// banner variables
+$banner-max-height: 500px;
+
+// banner //
+.region--banner {
+  padding: 0;
+  background-color: $c-teal;
+  background-image: url('../images/pattern.svg');
+  background-size: 40%;
+
+  .feature {
+    justify-content: flex-end;
+  }
+
+  .img {
+    max-height: $banner-max-height;
+  }
+
+  .column {
+    padding: 0;
+    width: 50%;
+  }
+  .el {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .el--text {
+    justify-content: center;
+    align-items: center;
+    padding: $space8;
+    box-sizing: border-box;
+  }
+  .el--image {
+    display: flex;
+  }
+  .text {
+    margin-bottom: $space1;
+
+    &--intro {
+      font-size: 1.1vw;
+      text-transform: uppercase;
+      margin-bottom: $space1;
+      color: $c-blue;
+
+      &.ts-l {
+        font-size: $fs-6;
+        line-height: $fs-4;
+      }
+    }
+    &--title {
+      font-size: 3.5vw;
+      font-family: $f-1;
+      font-weight: $fw-7;
+      color: $c-white;
+      text-shadow: 3px 3px $c-blue;
+      text-align: center;
+
+      &:after {
+        content: '';
+        height: 1px;
+        width: 20px;
+        background-color: $c-blue;
+        display: block;
+        margin: $space1 auto;
+      }
+
+      &.no-border:after {
+        background: transparent;
+      }
+    }
+    &--manager {
+      color: $c-blue;
+      font-size: 1.2vw;
+
+      b {
+        font-style: italic;
+      }
+
+      &.ts-l {
+        font-size: $fs-6;
+      }
+    }
+    &--stats {
+      font-size: $fs-1;
+      border-radius: 5px;
+      padding: $space2;
+      background: $c-blue;
+      width: fit-content;
+      box-shadow: 5px 5px 0 0 $c-tealDark;
+
+      .stat {
+        color: $c-white;
+        margin-right: $space2;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// carousel
+.carousel {
+  overflow: hidden;
+  position: relative;
+
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .slick-dots {
+    bottom: $space1;
+  }
+
+  &.slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .slick-dots li {
+    margin: 0 2px;
+    button:before,
+    &.slick-active button:before {
+      color: $c-white;
+      font-size: 8px;
+    }
+  }
+}
+
+@media (max-width: $w-tab) {
+  .region--banner {
+    .feature-img {
+      display: none;
+    }
+
+    .column,
+    .el--text {
+      width: 100%;
+    }
+
+    .el--text {
+      padding: $space4;
+    }
+
+    .text--intro,
+    .text--manager {
+      font-size: $fs-1;
+    }
+
+    .text--title {
+      font-size: $fs-4;
+    }
+
+    .text--stats {
+      display: none;
+    }
+  }
+}

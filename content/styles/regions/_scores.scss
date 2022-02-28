@@ -1,0 +1,35 @@
+.region--stats {
+  font-size: $fs-3;
+
+  .score {
+    color: $c-blue;
+    font-weight: $fw-6;
+    padding-right: $space05;
+
+    &.mobile {
+      padding-right: $space1;
+    }
+  }
+
+  .gm {
+    padding-left: $space05;
+
+    p {
+      font-weight: $fw-1;
+    }
+  }
+
+  .list__item p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $w-tab-p) {
+  .region--stats {
+    .list__item p {
+      text-align: center;
+    }
+  }
+}

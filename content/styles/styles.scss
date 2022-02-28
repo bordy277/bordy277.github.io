@@ -1,20 +1,19 @@
 // Loog Style Manifest //
 
-// Config
+// Global
 @import 'global/config';
-@import 'global/mixins';
 @import 'global/structure';
 @import 'global/typography';
 @import 'global/common';
+@import 'global/shared';
+@import 'global/backgrounds';
 
-// Base
-@import 'base/regions';
-
-// Elements
-@import 'elements/highscore';
-@import 'elements/plaque';
-@import 'elements/poopstack';
-@import 'elements/manager';
-@import 'elements/shared';
-@import 'elements/boxscore';
-@import 'elements/stats';
+// Regions
+@import 'regions/banner';
+@import 'regions/footer';
+@import 'regions/managers';
+@import 'regions/nav';
+@import 'regions/scores';
+@import 'regions/lists';
+@import 'regions/stats-manager';
+@import 'regions/accordion';

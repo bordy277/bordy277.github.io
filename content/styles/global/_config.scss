@@ -1,11 +1,12 @@
 // Config //
 
 // width //
-$w-max:      1280px;
-$w-tab:      1024px;
-$w-tab-p:    768px;
-$w-mobile:   480px;
-$w-mobile-p: 320px;
+$w-max:        1280px;
+$w-tab:        1024px;
+$w-tab-p:      768px;
+$w-mobile:     665px;
+$w-mobile-s:   480px;
+$w-mobile-p:   320px;
 
 // colors //
 $c-white:     #ffffff;
@@ -13,11 +14,22 @@ $c-black:     #161719;
 $c-grey1:     #eeeeee;
 $c-grey2:     #cccccc;
 $c-grey3:     #777777;
-$c-grey4:     #444444;
+$c-grey4:     #555555;
 $c-green:     #283b18;
 $c-orange:    #ae6a2c;
-$c-red:       #3b1818;
+$c-red:       #be0808;
+$c-blue:      #0b1c25;
+$c-blue-dark: #061016;
 $c-plaque:    #524932;
+$c-gold:      #c8a030;
+$c-goldMedium:#7e651b;
+$c-goldDark:  #504012;
+$c-teal:      #29a48e;
+$c-tealDark:  #1c7465;
+$c-poop:      #704023;
+$c-poopDark:  #4e2b15;
+$c-hl-best:   #7cd6c7;
+$c-hl-worst:  #f59f9e;
 $transparent: rgba(255,255,255,.001);
 
 // fonts //

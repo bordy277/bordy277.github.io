@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html id="stats">
+  <head>
+    <title>LOOG</title>
+    <link rel="icon" type="image/png" href="content/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="content/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&family=Roboto:wght@300,400;500;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="loog.com">
+    <link rel="stylesheet" type="text/css" href="content/scripts/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="content/scripts/slick/slick/slick-theme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The home of the LOOG.">
+    <meta name="keywords" content="Loog, Football, Fantasy">
+    <meta name="author" content="Brody Steineck">
+  </head>
+  <body>
+    <div class="container">
+
+<section class="section masthead">
+  <div class="region region--masthead bg-blue">
+    <div class="block">
+      <div class="column flex flex-ac">
+        <div class="el el--logo">
+          <h1 class="header"><a class="link" href="index.html">Loog</a></h1>
+        </div>
+        <nav class="nav" role="navigation" aria-label="site">
+          <a class="nav__item champions" href="champions.html">Champions</a>
+          <a class="nav__item poopstacks" href="poopstacks.html">Poopstacks</a>
+          <a class="nav__item history" href="history.html">History</a>
+          <a class="nav__item cup" href="cup.html">Cup</a>
+          <a class="nav__item stats" href="stats.html">Stats</a>
+        </nav>
+        <button class="menu__toggle mobile" aria-label="toggle nav menu"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section banner">
+  <div class="region region--banner">
+    <div class="block">
+      <div class="column flex feature">
+        <div class="el el--text flex flex-col">
+          <h1 class="text text--title no-border">LOOG 📈 Stats</h1>
+          <div class="text text--stats flex">
+            <div class="stat">Numbers Don't Lie</div>
+          </div>
+        </div>
+      </div>
+      <div class="column flex flex-end feature-img">
+        <div class="el el--image flex-one skew">
+          <img class="img" src="content/images/features/math.gif"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section highscores">
+  <div class="region region--stats bg-grey">
+    <div class="block block--center">
+      <div class="column">
+        <h2 class="header ta-c">All-Time High Scores</h2>
+      </div>
+    </div>
+    <div class="block block--center">
+      <div class="column">
+        <div class="list flex flex-wrap">
+          <div class="list__item score auto ta-r desktop">
+            <p><span class="score">188.3</span></p>
+            <p><span class="score">177.6</span></p>
+            <p><span class="score">177.1</span></p>
+            <p><span class="score">174.2</span></p>
+            <p><span class="score">170.0</span></p>
+          </div>
+          <div class="list__item gm auto">
+            <p><span class="score mobile">188.3</span><span class="manager">Sarberg</span><span class="year"> - 2020</span></p>
+            <p><span class="score mobile">177.6</span><span class="manager">Scarrella</span><span class="year"> - 2019</span></p>
+            <p><span class="score mobile">177.1</span><span class="manager">Hammarsten</span><span class="year"> - 2021</span></p>
+            <p><span class="score mobile">174.2</span><span class="manager">Scarrella</span><span class="year"> - 2019</span></p>
+            <p><span class="score mobile">170.0</span><span class="manager">Sarberg</span><span class="year"> - 2021</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="list flex">
+          <div class="list__item score auto ta-r desktop">
+            <p><span class="score">164.2</span></p>
+            <p><span class="score">163.0</span></p>
+            <p><span class="score">160.9</span></p>
+            <p><span class="score">160.7</span></p>
+            <p><span class="score">160.5</span></p>
+          </div>
+          <div class="list__item gm auto">
+            <p><span class="score mobile">164.2</span><span class="manager">Stickney</span><span class="year"> - 2019</span></p>
+            <p><span class="score mobile">163.0</span><span class="manager">Rennan</span><span class="year"> - 2017</span></p>
+            <p><span class="score mobile">160.9</span><span class="manager">Steineck</span><span class="year"> - 2017</span></p>
+            <p><span class="score mobile">160.7</span><span class="manager">Hoss</span><span class="year"> - 2020</span></p>
+            <p><span class="score mobile">160.5</span><span class="manager">Stickney</span><span class="year"> - 2018</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section manager-stats">
+  <div class="region region--stats">
+    <div class="block block--center">
+      <div class="column">
+        <h2 class="header ta-c">All-Time Manager Performance</h2>
+      </div>
+    </div>
+    <div class="block block--center">
+      <div class="column">
+        <!-- Seidel -->
+        <div id="seidel" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/seidel.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Mike Seidel<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">5</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">100.5</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">99.4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">50.69</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Musser (5-5)</div>
+                  <div class="item item--rival">Sarberg (6-6)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pat -->
+        <div id="pat" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/pat.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Patrick Kerrigan<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat best">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">7</div>
+                </div>
+                <div class="item item--stat best">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">6</div>
+                </div>
+                <div class="item item--stat best">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">104.1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">98.7</div>
+                </div>
+                <div class="item item--stat best">
+                  <div class="label">Win %</div>
+                  <div class="stat">60.99</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Scarrella (7-5)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Jeff -->
+        <div id="sarberg" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/jeff.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Jeff Sarberg<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">3</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">103.2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">97.4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">51.41</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Derrick (5-5)</div>
+                  <div class="item item--rival">Seidel (6-6)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Rennan -->
+        <div id="rennan" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/rennan.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Brody Rennan<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">0</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">3</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">100.1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">100.2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">51.39</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Scarrella (6-5)</div>
+                  <div class="item item--rival">Hammarsten (5-5)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Scarrella -->
+        <div id="scarrella" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/nick.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Nick Scarrella<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">0</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">98.2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">98.0</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">48.97</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Derrick (5-5)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hoss -->
+        <div id="hoss" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/hoss.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Geoff Hoss<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat best">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">5</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">103.6</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">99.7</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">52.08</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Musser (5-4)</div>
+                  <div class="item item--rival">Sarberg (4-5)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Femrite -->
+        <div id="femrite" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/tom.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Tom Femrite<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">0</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">94.5</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">99.2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">45.14</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Steineck (3-3)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hammarsten -->
+        <div id="hammarsten" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/tyler.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Tyler Hammarsten<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">97.7</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">100.9</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">43.66</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Rennan (5-5)</div>
+                  <div class="item item--rival">K. Kerrigan (3-3)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Derrick -->
+        <div id="derrick" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/wes.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Wes Derrick<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">5</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">94.9</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">98.1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">50.00</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Musser (6-6)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Musser -->
+        <div id="musser" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/musser.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Michael Musser<i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">0</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">99.2</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">98.6</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Win %</div>
+                  <div class="stat">48.61</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Derrick (6-6)</div>
+                  <div class="item item--rival">Seidel (5-5)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Steineck -->
+        <div id="steineck" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/steineck.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Brody Steineck <span class="late">(Late Entry)</span><i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+              <div class="item item--stat">
+                <div class="label">Champ Wins</div>
+                <div class="stat">1*</div>
+              </div>
+              <div class="item item--stat">
+                <div class="label">Playoff App.</div>
+                <div class="stat">3</div>
+              </div>
+              <div class="item item--stat">
+                <div class="label">Top 3 Fin.</div>
+                <div class="stat">1</div>
+              </div>
+              <div class="item item--stat">
+                <div class="label">Avg PF/g</div>
+                <div class="stat">100.5</div>
+              </div>
+              <div class="item item--stat worst">
+                <div class="label">Avg PA/g</div>
+                <div class="stat">104.7</div>
+              </div>
+              <div class="item item--stat">
+                <div class="label">Win %</div>
+                <div class="stat">48.96</div>
+              </div>
+            </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Musser (5-4)</div>
+                  <div class="item item--rival">Femrite (3-3)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Kevin -->
+        <div id="kevin" class="stat_module manager flex collapsed">
+          <div class="figure"><img class="img" src="content/images/managers/kevin.jpg" /></div>
+          <div class="content">
+            <h3 class="header">Kevin Kerrigan <span class="late">(Late Entry)</span><i class="icon"></i></h3>
+            <div class="manager__stats flex">
+              <div class="stat__list">
+                <div class="item item--stat">
+                  <div class="label">Champ Wins</div>
+                  <div class="stat">0</div>
+                </div>
+                <div class="item item--stat worst">
+                  <div class="label">Playoff App.</div>
+                  <div class="stat">1</div>
+                </div>
+                <div class="item item--stat worst">
+                  <div class="label">Top 3 Fin.</div>
+                  <div class="stat">0</div>
+                </div>
+                <div class="item item--stat worst">
+                  <div class="label">Avg PF/g</div>
+                  <div class="stat">86.4</div>
+                </div>
+                <div class="item item--stat">
+                  <div class="label">Avg PA/g</div>
+                  <div class="stat">101.6</div>
+                </div>
+                <div class="item item--stat worst">
+                  <div class="label">Win %</div>
+                  <div class="stat">36.92</div>
+                </div>
+              </div>
+              <div class="rivals">
+                <div class="title">Rivals</div>
+                <div class="list">
+                  <div class="item item--rival">Hammarsten (3-3)</div>
+                  <div class="item item--rival">Derrick (2-2)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section lowscores">
+  <div class="region region--stats bg-grey">
+    <div class="block block--center">
+      <div class="column">
+        <h2 class="header ta-c">All-Time Low Scores</h2>
+      </div>
+    </div>
+    <div class="block block--center">
+      <div class="column">
+        <div class="list flex flex-wrap">
+          <div class="list__item score auto ta-r desktop">
+            <p><span class="score">38.6</span></p>
+            <p><span class="score">41.5</span></p>
+            <p><span class="score">42.3</span></p>
+            <p><span class="score">43.3</span></p>
+            <p><span class="score">43.4</span></p>
+          </div>
+          <div class="list__item gm auto">
+            <p><span class="score mobile">38.6</span><span class="manager">Femrite</span><span class="year"> - 2013</span></p>
+            <p><span class="score mobile">41.5</span><span class="manager">Rennan</span><span class="year"> - 2020</span></p>
+            <p><span class="score mobile">42.3</span><span class="manager">Femrite</span><span class="year"> - 2013</span></p>
+            <p><span class="score mobile">43.3</span><span class="manager">Scarrella</span><span class="year"> - 2014</span></p>
+            <p><span class="score mobile">43.4</span><span class="manager">Hammarsten</span><span class="year"> - 2017</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="list flex">
+          <div class="list__item score auto ta-r desktop">
+            <p><span class="score">43.5</span></p>
+            <p><span class="score">43.7</span></p>
+            <p><span class="score">45.0</span></p>
+            <p><span class="score">47.2</span></p>
+            <p><span class="score">48.2</span></p>
+          </div>
+          <div class="list__item gm auto">
+            <p><span class="score mobile">43.5</span><span class="manager">Hammarsten</span><span class="year"> - 2013</span></p>
+            <p><span class="score mobile">43.7</span><span class="manager">Scarrella</span><span class="year"> - 2014</span></p>
+            <p><span class="score mobile">45.0</span><span class="manager">Sarberg</span><span class="year"> - 2015</span></p>
+            <p><span class="score mobile">47.2</span><span class="manager">Hammarsten</span><span class="year"> - 2013</span></p>
+            <p><span class="score mobile">48.2</span><span class="manager">Femrite</span><span class="year"> - 2016</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section leaderboard">
+  <div class="region">
+    <div class="block block--center">
+      <div class="column">
+        <a class="el el--ad" href="https://www.facebook.com/tyler.hammarsten" target="_blank">
+          <img class="img desktop" src="content/images/ad_leaderboard.jpg"/>
+          <img class="img mobile" src="content/images/ad_leaderboard_mobile.jpg"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section social">
+  <div class="region no-pad">
+    <div class="block">
+      <div class="column bg-blue">
+        <div class="module">
+          <h2 class="header tw no-border">Get in the game</h2>
+          <a class="twitter-timeline" data-height="232" data-theme="light" href="https://twitter.com/thepodwpatnnick?ref_src=twsrc%5Etfw">Tweets by thepodwpatnnick</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="column bg-grey">
+        <div class="module">
+          <h2 class="header no-border">The Pod with Pat and Nick</h2>
+          <iframe src="https://open.spotify.com/embed/show/4NqFgpKXrCb3V8rMReUJJB?utm_source=generator&theme=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section footer">
+  <div class="region bg-black">
+    <div class="block">
+      <div class="column">
+        <div class="module">
+          <div class="el el--text">
+            <p class="copyright">Copyright &copy; 2021 LOOG, Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="module">
+          <div class="el el--social-links">
+            <a class="social__link espn" href="https://fantasy.espn.com/football/league?leagueId=605173" target="_blank"></a>
+            <a class="social__link facebook" href="https://www.facebook.com/groups/331032993721223" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="content/scripts/slick/slick/slick.min.js"></script>
+<script src="content/scripts/scripts.js"></script>
+</body>
+</html>
+

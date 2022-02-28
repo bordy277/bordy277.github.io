@@ -1,0 +1,131 @@
+// Plaque Element //
+.el--plaque {
+  border-radius: $radius;
+  background-color: $c-white;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  border: solid 1px $c-grey3;
+  padding: $space2;
+  text-align: center;
+  color: $c-grey4;
+  border-radius: 10px;
+  box-shadow: 5px 5px $c-grey3;
+
+  .club--champion & {
+    color: $c-goldDark;
+    border-color: $c-goldMedium;
+    background-color: $c-gold;
+    box-shadow: 5px 5px $c-goldMedium;
+    max-width: 800px;
+    margin: $space2 auto;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/icon--trophy.svg');
+      background-repeat: no-repeat;
+      height: 60px;
+      width: 60px;
+      background-size: 100%;
+      top: calc(50% - 30px);
+      opacity: .5;
+    }
+
+    &:before {
+      left: 10%;
+    }
+
+    &:after {
+      right: 10%;
+    }
+
+    .name {
+      font-size: 22px;
+    }
+
+    #poopstacks & {
+      color: $c-white;
+      background-color: $c-poop;
+      box-shadow: 5px 5px $c-poopDark;
+      border-color: $c-poopDark;
+
+      &:before,
+      &:after {
+        opacity: .30;
+        height: 50px;
+        top: calc(50% - 25px);
+        background-image: url('../images/poop.svg');
+      }
+    }
+
+    #cup & {
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      .name {
+        white-space: normal;
+      }
+
+      .manager {
+        display: none;
+      }
+    }
+  }
+
+  .club--past & {
+    width: 100%;
+    max-width: calc(33% - 50px);
+
+    @media only screen and (max-width: $w-tab) {
+      max-width: 100%;
+    }
+
+    &.spacer {
+      border: none;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .year {
+    font-weight: $fw-3;
+    font-size: $fs-2;
+  }
+
+  .name {
+    font-size: 20px;
+    font-family: $f-1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .manager {
+    font-size: $fs-2;
+    font-weight: $fw-3;
+  }
+}
+
+.club--past {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: $w-tab-p) {
+  .club--champion .el--plaque {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .club--past .el--plaque.spacer {
+    display: none;
+  }
+}

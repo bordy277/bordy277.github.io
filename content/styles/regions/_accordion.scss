@@ -1,0 +1,87 @@
+.item--accordion {
+  background-color: $c-white;
+  border-radius: 10px;
+  border: solid 1px $c-grey3;
+  box-shadow: 5px 5px $c-grey3;
+  margin-bottom: $space2;
+
+  .header--accordion {
+    color: $c-blue;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  .content {
+    display: none;
+    border-top: solid 1px $c-grey2;
+    padding: $space2 0;
+    margin: 0 $space2;
+
+    .text {
+      margin: 0;
+      font-size: $fs-2;
+    }
+
+    .description {
+      margin-bottom: $space2;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: $space2;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+
+      .icon .svg {
+        fill: $c-teal;
+      }
+    }
+
+    &.expanded {
+      .icon {
+        transform: rotate(180deg);
+
+        .svg {
+          fill: $c-teal;
+        }
+      }
+    }
+
+    .icon {
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+
+      .svg {
+        width: 100%;
+        height: 100%;
+        fill: $c-grey3;
+      }
+    }
+  }
+
+  .highlights {
+    margin-bottom: $space2;
+
+    .text {
+      margin: 0 $space2 $space2 0;
+      color: $c-white;
+      border-radius: 5px;
+      padding: $space2;
+      background: $c-blue;
+      width: fit-content;
+      box-shadow: 5px 5px 0 0 $c-grey3;
+    }
+  }
+}
+
+@media only screen and (max-width: $w-mobile) {
+  .item--accordion .highlights {
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,12 @@
+.bg-grey {
+  background-color: $c-grey1;
+}
+.bg-blue {
+  background-color: $c-blue;
+}
+.bg-black {
+  background-color: $c-black;
+}
+.bg-gradient {
+  background-image: linear-gradient($c-white, $c-grey1);
+}

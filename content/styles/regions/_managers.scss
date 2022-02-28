@@ -1,0 +1,93 @@
+// Manager //
+.el--manager {
+  width: 16.6666666%;
+  margin: 0 0 2px 0;
+  box-shadow: 0 0 0 2px $c-white;
+  perspective: 1000px;
+  background-color: transparent;
+
+  .inner-manager {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  &:hover {
+    .inner-manager {
+      transform: rotateY(180deg);
+    }
+
+    .portrait {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .info {
+      opacity: 1;
+    }
+  }
+
+  .portrait, .info {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .info {
+    padding: $space1;
+    background-color: $c-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .3s linear;
+  }
+
+  .name {
+    font-size: $fs-3;
+    color: $c-white;
+    margin-bottom: $space1;
+  }
+
+  .description {
+    font-weight: $fw-1;
+    color: $c-grey2;
+    font-style: italic;
+  }
+
+  .team {
+    min-height: 0;
+    font-style: italic;
+    color: $c-grey1;
+    font-size: $fs-1;
+    font-weight: $fw-3;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $w-tab) {
+  .el--manager {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: $w-mobile) {
+  .el--manager {
+    width: 33.33333%;
+  }
+}

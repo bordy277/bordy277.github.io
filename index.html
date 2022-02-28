@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html id="home">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179736230-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-179736230-1');
-    </script>
     <title>LOOG</title>
     <link rel="icon" type="image/png" href="content/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="content/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&family=Roboto:wght@300,400;500;700&display=swap" rel="stylesheet">
     <link rel="canonical" href="loog.com">
+    <link rel="stylesheet" type="text/css" href="content/scripts/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="content/scripts/slick/slick/slick-theme.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The home of the LOOG.">
     <meta name="keywords" content="Loog, Football, Fantasy">
@@ -22,488 +15,316 @@
   </head>
   <body>
     <div class="container">
-      <section class="section masthead">
-        <div class="region region--masthead">
-          <div class="block">
-            <div class="column">
-              <div class="el el--text">
-                <h1 class="header ta-c">Loog</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section banner">
-        <div class="region region--banner">
-          <div class="block">
-            <div class="column">
-              <div class="el el--image">
-                <img class="img" src="content/images/banner.jpg"/>
-              </div>
-              <div class="banner__text">
-                <div class="el el--text shadow">
-                  <h1 class="header header--banner">LOOG</h1>
-                </div>
-                <div class="el el--text metallic">
-                  <h1 class="header header--banner">LOOG</h1>
-                </div>
-                <div class="el el--text shimmer">
-                  <h1 class="header header--banner">LOOG</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section leaderboard">
-        <div class="region">
-          <div class="block block--center">
-            <div class="column">
-              <a class="el el--ad" href="https://www.facebook.com/tyler.hammarsten" target="_blank">
-                <img class="img desktop" src="content/images/ad_leaderboard.jpg"/>
-                <img class="img mobile" src="content/images/ad_leaderboard_mobile.jpg"/>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section scores">
-        <div class="region">
-          <div class="block block--center">
-            <div class="column">
-              <div class="el el--text">
-                <h2 class="header ta-c"><span id="season"></span> Season: Week <span id="week"></span></h2>
-              </div>
-              <div class="el el--boxscores flex flex-wrap">
-                <div class="boxscore">
-                  <div class="team home">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                  <div class="team away">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                </div>
-                <div class="boxscore">
-                  <div class="team home">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                  <div class="team away">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                </div>
-                <div class="boxscore">
-                  <div class="team home">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                  <div class="team away">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                </div>
-                <div class="boxscore">
-                  <div class="team home">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                  <div class="team away">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                </div>
-                <div class="boxscore">
-                  <div class="team home">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                  <div class="team away">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                </div>
-                <div class="boxscore">
-                  <div class="team home">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                  <div class="team away">
-                    <div class="logo">
-                      <img class="img" src="">
-                    </div>
-                    <div class="info">
-                      <div class="name"></div>
-                      <div class="record"><span class="seed"></span></div>
-                    </div>
-                    <div class="score"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="el el--stats flex flex-wrap">
-                <div class="stat stat--high">
-                  <h3 class="header ta-c">Most Points Scored</h3>
-                  <div class="team flex tw">
-                    <div class="data data--team">
-                      <div class="name"></div>
-                      <div class="owner"></div>
-                    </div>
-                    <div class="data data--score ta-r">
-                      <div class="score"></div>
-                      <div class="wins">Wins <span class="percent"></span>%</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="stat stat--mvp">
-                  <h3 class="header ta-c">Current Week MVP</h3>
-                  <div class="team flex tw">
-                    <div class="data data--team">
-                      <div class="name">--</div>
-                      <div class="owner">--</div>
-                    </div>
-                    <div class="data data--score ta-r">
-                      <div class="score">0</div>
-                      <div class="wins">--</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="stat stat--low">
-                  <h3 class="header ta-c">Least Points Scored</h3>
-                  <div class="team flex tw">
-                    <div class="data data--team">
-                      <div class="name"></div>
-                      <div class="owner"></div>
-                    </div>
-                    <div class="data data--score ta-r">
-                      <div class="score"></div>
-                      <div class="wins">Wins <span class="percent"></span>%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section club">
-        <div class="region bg-grey">
-          <div class="block block--center">
-            <div class="column">
-              <div class="el el--text">
-                <h2 class="header ta-c trophy">Champions Club</h2>
-              </div>
-            </div>
-          </div>
-          <div class="block block--center">
-            <div class="column club--champion">
 
-            </div>
-          </div>
-          <div class="block block--center">
-            <div class="column club--past">
-            </div>
-          </div>
-          <div class="block block--center">
-            <div class="column">
-              <div class="el el--text ta-c">
-                <p class="statement">For those who rise above the rest</p>
-              </div>
-            </div>
-          </div>
+<section class="section masthead">
+  <div class="region region--masthead bg-blue">
+    <div class="block">
+      <div class="column flex flex-ac">
+        <div class="el el--logo">
+          <h1 class="header"><a class="link" href="index.html">Loog</a></h1>
         </div>
-      </section>
-      <section class="section stats">
-        <div class="region no-pad">
-          <div class="block">
-            <div class="column bg-green">
-              <div class="module module--hs">
-                <h3 class="header">High Scores</h3>
-                <div class="list flex flex-wrap">
-                  <div class="list__item auto">
-                    <p><span class="score">188.3</span><span class="manager">Sarberg</span><span class="year">2020</span></p>
-                    <p><span class="score">177.6</span><span class="manager">Scarrella</span><span class="year">2019</span></p>
-                    <p><span class="score">174.2</span><span class="manager">Scarrella</span><span class="year">2019</span></p>
-                    <p><span class="score">164.2</span><span class="manager">Stickney</span><span class="year">2019</span></p>
-                    <p><span class="score">163.0</span><span class="manager">Rennan</span><span class="year">2017</span></p>
-                  </div>
-                  <div class="list__item auto">
-                    <p><span class="score">160.9</span><span class="manager">Steineck</span><span class="year">2017</span></p>
-                    <p><span class="score">160.5</span><span class="manager">Stickney</span><span class="year">2018</span></p>
-                    <p><span class="score">160.1</span><span class="manager">Musser</span><span class="year">2019</span></p>
-                    <p><span class="score">159.9</span><span class="manager">Kerrigan</span><span class="year">2019</span></p>
-                    <p><span class="score">Who cares...</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column flex flex-ac">
-              <div class="module module--poopstack flex">
-                <div class="el el--img auto ta-c">
-                  <img class="img icon--poopstack" src="content/images/icons/icon--poopstack.svg"/>
-                </div>
-                <div class="el el--text auto">
-                  <h3 class="header">2020 Poopstack</h3>
-                  <p class="team">The Bums</p>
-                  <p class="manager">Nick Scarrella</p>
-                  <h4 class="header">Punishment</h4>
-                  <p class="punishment">Brazilian Wax - Ouch!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section managers">
-        <div class="region bg-gradient">
-          <div class="block">
-            <div class="column">
-              <div class="el el--text">
-                <h2 class="header ta-c tw">Team Managers</h2>
-              </div>
-            </div>
-          </div>
-          <div class="block block--center">
-            <div class="column">
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/musser.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Michael Musser</h4>
-                  <div class="team" value="1"></div>
-                  <div class="description">Schedule fixer</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/rennan.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Brody Rennan</h4>
-                  <div class="team" value="2"></div>
-                  <div class="description">Points Champ</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/pat.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Patrick Kerrigan</h4>
-                  <div class="team" value="5"></div>
-                  <div class="description">3rd place king</div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/nick.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Nick Scarrella</h4>
-                  <div class="team" value="4"></div>
-                  <div class="description">Draft king</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/tom.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Tom Femrite</h4>
-                  <div class="team" value="8"></div>
-                  <div class="description">Winging it</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/hoss.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Geoff Hoss</h4>
-                  <div class="team" value="7"></div>
-                  <div class="description dark">Gets frustrated</div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/seidel.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Michael Seidel</h4>
-                  <div class="team" value="12"></div>
-                  <div class="description dark">Silent, but deadly</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/steineck.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Brody Steineck</h4>
-                  <div class="team" value="13"></div>
-                  <div class="description dark">Just likes to gamble</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/jeff.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Jeff Sarberg</h4>
-                  <div class="team" value="3"></div>
-                  <div class="description dark">Rule lobbyist</div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/kevin.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Kevin Kerrigan</h4>
-                  <div class="team" value="6"></div>
-                  <div class="description dark">Fresh Meat...Kind of</div>
-                </div>
-              </div>
-              <div class="el el--manager">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/wes.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Wes Derrick</h4>
-                  <div class="team" value="9"></div>
-                  <div class="description dark">Packers fan, boooo!</div>
-                </div>
-              </div>
-              <div class="el el--manager last">
-                <div class="portrait">
-                  <img class="img" src="content/images/managers/tyler.jpg"/>
-                </div>
-                <div class="info">
-                  <h4 class="name">Tyler Hammarsten</h4>
-                  <div class="team" value="10"></div>
-                  <div class="description dark">First Wax</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section social">
-        <div class="region no-pad">
-          <div class="block">
-            <div class="column bg-grey">
-              <div class="module">
-                <h2 class="header">Get in the game</h2>
-                <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/and_pat?ref_src=twsrc%5Etfw">Tweets by and_pat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>
-            <div class="column">
-              <div class="module">
-                <h2 class="header">Don't miss a bad beat</h2>
-                <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/180832331&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/pkerrigan08" title="pkerrigan08" target="_blank" style="color: #cccccc; text-decoration: none;">pkerrigan08</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section footer">
-        <div class="region bg-dark">
-          <div class="block">
-            <div class="column">
-              <div class="module">
-                <div class="el el--text">
-                  <p class="copyright">Copyright &copy; 2020 LOOG, Inc. All rights reserved.</p>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="module">
-                <div class="el el--social-links">
-                  <a class="social__link espn" href="https://fantasy.espn.com/football/league?leagueId=605173" target="_blank"></a>
-                  <a class="social__link facebook" href="https://www.facebook.com/groups/331032993721223" target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <nav class="nav" role="navigation" aria-label="site">
+          <a class="nav__item champions" href="champions.html">Champions</a>
+          <a class="nav__item poopstacks" href="poopstacks.html">Poopstacks</a>
+          <a class="nav__item history" href="history.html">History</a>
+          <a class="nav__item cup" href="cup.html">Cup</a>
+          <a class="nav__item stats" href="stats.html">Stats</a>
+        </nav>
+        <button class="menu__toggle mobile" aria-label="toggle nav menu"></button>
+      </div>
     </div>
-    <script type="text/javascript" src= "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="content/scripts/scripts.js"></script>
-    <script data-main="content/scripts/main.js" src="content/scripts/require.min.js"></script>
-  </body>
+  </div>
+</section>
+
+<div class="carousel">
+  <section class="section banner">
+    <div class="region region--banner">
+      <div class="block">
+        <div class="column flex feature">
+          <div class="el el--text flex flex-col">
+            <div class="text text--intro">Congrats <strong>Montgomery Burns' Hiney</strong>! You are the 2021...</div>
+            <div class="text text--title">LOOG 🏆 Champion!</div>
+            <div class="text text--manager">Manager: <b>Geoff Hoss</b></div>
+            <div class="text text--stats flex">
+              <div class="stat">Total Points: <b>1715.5</b></div>
+              <div class="stat">Highest Score: <b>159.86</b></div>
+              <div class="stat">W-L-T: <b>11-3-0</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="column flex flex-end feature-img">
+          <div class="el el--image">
+            <img class="img" src="content/images/features/winner_2021.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section banner">
+      <div class="region region--banner">
+        <div class="block">
+          <div class="column flex feature">
+            <div class="el el--text flex flex-col">
+              <div class="text text--intro">Where will the 2021...</div>
+              <div class="text text--title">Draft Party 🤷‍♂️ be?!?!</div>
+              <div class="text text--manager">10 Year Anniversary</div>
+              <div class="text text--stats flex">
+                <div class="stat">Time to vote!</div>
+              </div>
+            </div>
+          </div>
+          <div class="column flex flex-end feature-img">
+            <div class="el el--image flex-one">
+              <img class="img" src="content/images/features/draft.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</div>
+
+<section class="section message">
+  <div class="region region--stats bg-grey">
+    <div class="block block--center">
+      <div class="column">
+        <h2 class="header ta-c">The LOOG</h2>
+      </div>
+    </div>
+    <div class="block block--center">
+      <div class="column">
+        <div class="el el--text ta-c">
+          <p class="no-m-t">The League of Ordinary Gentlemen is a collective that is passionate about
+            fantasy sports, sports betting, and pop culture. We are comprised of 12 ordinary individuals from various fields including
+            Science, Design, Manual Labor, Sales, Teaching, Therapy, etc. Although we come from many walks of life,
+            one thing is certain, we are all...ordinary.
+          </p>
+          <p>
+            The LOOG's mission is simple – <i><b>Have fun while making history</b></i>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section managers">
+  <div class="region no-pad">
+    <div class="block">
+      <div class="column no-pad flex flex-wrap">
+
+        <div class="el el--manager">
+          <a href="stats.html#musser" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/musser.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Michael Musser</h4>
+              <div class="team" value="1"></div>
+              <div class="description">Schedule fixer</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="el el--manager">
+          <a href="stats.html#rennan" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/rennan.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Brody Rennan</h4>
+              <div class="team" value="2"></div>
+              <div class="description">Points Champ</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="el el--manager">
+          <a href="stats.html#pat" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/pat.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Patrick Kerrigan</h4>
+              <div class="team" value="5"></div>
+              <div class="description">3rd place king</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#scarrella" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/nick.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Nick Scarrella</h4>
+              <div class="team" value="4"></div>
+              <div class="description">Draft king</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#femrite" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/tom.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Tom Femrite</h4>
+              <div class="team" value="8"></div>
+              <div class="description">Winging it</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#sarberg" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/jeff.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Jeff Sarberg</h4>
+              <div class="team" value="3"></div>
+              <div class="description dark">Rule lobbyist</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#hoss" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/hoss.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Geoff Hoss</h4>
+              <div class="team" value="7"></div>
+              <div class="description dark">Gets frustrated</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#steineck" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/steineck.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Brody Steineck</h4>
+              <div class="team" value="13"></div>
+              <div class="description dark">Just likes to gamble</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#seidel" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/seidel.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Michael Seidel</h4>
+              <div class="team" value="12"></div>
+              <div class="description dark">Silent, but deadly</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#kevin" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/kevin.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Kevin Kerrigan</h4>
+              <div class="team" value="6"></div>
+              <div class="description dark">Fresh Meat...Kind of</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#derrick" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/wes.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Wes Derrick</h4>
+              <div class="team" value="9"></div>
+              <div class="description dark">Packers fan, boooo!</div>
+            </div>
+          </a>
+        </div>
+        <div class="el el--manager">
+          <a href="stats.html#hammarsten" class="inner-manager">
+            <div class="portrait">
+              <img class="img" src="content/images/managers/tyler.jpg"/>
+            </div>
+            <div class="info">
+              <h4 class="name">Tyler Hammarsten</h4>
+              <div class="team" value="10"></div>
+              <div class="description dark">Wax Man</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section leaderboard">
+  <div class="region">
+    <div class="block block--center">
+      <div class="column">
+        <a class="el el--ad" href="https://www.facebook.com/tyler.hammarsten" target="_blank">
+          <img class="img desktop" src="content/images/ad_leaderboard.jpg"/>
+          <img class="img mobile" src="content/images/ad_leaderboard_mobile.jpg"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section social">
+  <div class="region no-pad">
+    <div class="block">
+      <div class="column bg-blue">
+        <div class="module">
+          <h2 class="header tw no-border">Get in the game</h2>
+          <a class="twitter-timeline" data-height="232" data-theme="light" href="https://twitter.com/thepodwpatnnick?ref_src=twsrc%5Etfw">Tweets by thepodwpatnnick</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="column bg-grey">
+        <div class="module">
+          <h2 class="header no-border">The Pod with Pat and Nick</h2>
+          <iframe src="https://open.spotify.com/embed/show/4NqFgpKXrCb3V8rMReUJJB?utm_source=generator&theme=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section footer">
+  <div class="region bg-black">
+    <div class="block">
+      <div class="column">
+        <div class="module">
+          <div class="el el--text">
+            <p class="copyright">Copyright &copy; 2021 LOOG, Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="module">
+          <div class="el el--social-links">
+            <a class="social__link espn" href="https://fantasy.espn.com/football/league?leagueId=605173" target="_blank"></a>
+            <a class="social__link facebook" href="https://www.facebook.com/groups/331032993721223" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="content/scripts/slick/slick/slick.min.js"></script>
+<script src="content/scripts/scripts.js"></script>
+</body>
 </html>
+
