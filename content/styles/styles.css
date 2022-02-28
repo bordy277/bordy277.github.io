@@ -480,6 +480,9 @@ ul {
   .region--banner .text--title {
     font-size: 36px;
   }
+  .region--banner .text--title.no-border:after {
+    display: none;
+  }
   .region--banner .text--stats {
     display: none;
   }

@@ -12,6 +12,22 @@ $(document).ready(function() {
     html.toggleClass("menu-open");
   });
 
+  // manager stats - mobile
+  var managerStats = $('.manager.stat_module');
+
+  managerStats.click(function(){
+    var manager = $(this);
+    var collapsed = manager.hasClass('collapsed');
+    managerStats.addClass('collapsed');
+
+    if (collapsed){
+      manager.removeClass('collapsed');
+    } else {
+      manager.addClass('collapsed');
+    }
+
+  });
+
   // accordion
   var accordionBtn = $('.item--accordion .btn');
 

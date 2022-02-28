@@ -151,6 +151,10 @@ $banner-max-height: 500px;
 
     .text--title {
       font-size: $fs-4;
+
+      &.no-border:after {
+        display: none;
+      }
     }
 
     .text--stats {
